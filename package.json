@@ -1,0 +1,23 @@
+{
+  "name": "portfolio_developer",
+  "version": "1.0.0",
+  "description": "my personal services website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fausto-GJS/portfolio_developer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fausto-GJS/portfolio_developer/issues"
+  },
+  "homepage": "https://github.com/fausto-GJS/portfolio_developer#readme",
+  "dependencies": {
+    "react-router-dom": "^6.3.0"
+  }
+}
