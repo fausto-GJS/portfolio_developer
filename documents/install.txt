@@ -3,3 +3,10 @@ frontend
     npm install react-router-dom
     npm install react-icons
 }
+npm server{
+    npm i concurrently
+}
+backend
+{
+    npm install nodemon
+}
