@@ -10,7 +10,7 @@ export default function Header() {
             <div className="menu">
                 <Link to='/'>Sobre</Link>
                 <Link to='/portfolio'>Portfolio</Link>
-                <Link to='/contact'>Contato</Link>
+                <a href="#contactNetwork">Contato</a>
             </div>
         </div>
     )

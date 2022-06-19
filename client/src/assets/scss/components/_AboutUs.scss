@@ -2,6 +2,7 @@
 
 @mixin AboutUs {
     #AboutUs {
+        padding-top: 50px;
         @include module.flex-column;
         @include module.background-fundo1;
         font-size: 30px;
@@ -46,8 +47,10 @@
             @include module.flex-column;
             @include module.position-center;
             margin-top: 25px;
-
             color: #ffcb1a;
+            .title{
+                text-decoration: underline;
+            }
         }
 
         .card {
@@ -107,7 +110,61 @@
         .iconMongo {
             animation: Mongo 15s infinite;
         }
+        .network{
+            @include module.flex-column;
+            @include module.background-fundo3;
+            @include module.position-center;
+            margin-top: 40px;
+            height: 500px;
+            .social{
+                @include module.flex-column;
+                @include module.position-center;
+                margin: 50px 0px;
+                width: 25%;
+                height: 150px;
+            }
+            p{
+                margin-top: 15px;
+                color:#ff8000;
+                font-size: 17px;
+            }
+        }
+        .iconNetwork{
+            margin-top: 15px;
+            @include module.flex-row;
+            @include module.position-space;
+            width: 70%;
+        }
+            .iconLinkedin{
+                @include module.icon-size4;
+                @include module.icon-linkedin;
+            }
+            .iconGit{
+                @include module.icon-size4;
+                @include module.icon-git;
+            }
+            #comunication{
+                @include module.flex-column;
+                @include module.position-center;
+                width: 500px;
+                border: 1px solid #ffffff;
+            }
+            
+            
+            
+            
 
+
+
+
+
+
+
+
+
+
+
+     ///////////////////////////////////////////   
         @keyframes molecule {
             0% {
                 border-radius: 50px;

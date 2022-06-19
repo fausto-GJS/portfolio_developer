@@ -2,6 +2,7 @@
 
 @mixin Header {
     #Header {
+        position: fixed;
         @include module.flex-row;
         @include module.position-space;
         @include module.background-marmore;

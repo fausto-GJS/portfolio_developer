@@ -26,6 +26,7 @@ a {
 }
 
 #AboutUs {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   background-color: #525252;
@@ -73,6 +74,9 @@ a {
   align-items: center;
   margin-top: 25px;
   color: #ffcb1a;
+}
+#AboutUs .ability .title {
+  text-decoration: underline;
 }
 #AboutUs .card {
   display: flex;
@@ -126,6 +130,55 @@ a {
 }
 #AboutUs .iconMongo {
   animation: Mongo 15s infinite;
+}
+#AboutUs .network {
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height: 500px;
+}
+#AboutUs .network .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+  width: 25%;
+  height: 150px;
+}
+#AboutUs .network p {
+  margin-top: 15px;
+  color: #ff8000;
+  font-size: 17px;
+}
+#AboutUs .iconNetwork {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+#AboutUs .iconLinkedin {
+  width: 40px;
+  height: 40px;
+  color: #1a31ff;
+}
+#AboutUs .iconGit {
+  width: 40px;
+  height: 40px;
+  color: #fff9f2;
+}
+#AboutUs #comunication {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border: 1px solid #ffffff;
 }
 @keyframes molecule {
   0% {
@@ -249,6 +302,7 @@ a {
 }
 
 #Header {
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
