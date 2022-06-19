@@ -1,0 +1,9 @@
+@use './root/components.scss';
+
+@include components.Browser;
+@include components.AboutUs;
+@include components.Contact;
+@include components.Portfolio;
+@include components.Error;
+@include components.Header;
+@include components.Footer;

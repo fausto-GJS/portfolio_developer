@@ -1,0 +1,10 @@
+@use '../root/module.scss';
+@mixin Footer{
+    #Footer{
+        @include module.flex-row;
+        @include module.position-center;
+        @include module.background-marmore;
+        width: 100%;
+       
+    }
+}

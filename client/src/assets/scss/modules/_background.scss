@@ -1,0 +1,12 @@
+@mixin glitter {
+    background-image: url('../imgs/glitter.gif');
+    background-size: contain;
+}
+@mixin prata {
+    background-image: url('../imgs/prata.jpg');
+    background-size: 100%;
+}
+@mixin marmore {
+    background-image: url('../imgs/marmore.jpg');
+    background-size: 100%;
+}

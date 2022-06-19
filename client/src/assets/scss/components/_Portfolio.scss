@@ -1,0 +1,9 @@
+@use '../root/module.scss';
+@mixin Portfolio {
+    #Portfolio{
+
+        @include module.flex-row;
+        width: 100px;
+        background-color: aqua;
+    }
+}

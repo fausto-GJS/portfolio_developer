@@ -1,0 +1,7 @@
+@use '../root/module.scss';
+@mixin AboutUs {
+    #AboutUs{
+        @include module.flex-column;
+        font-size: 30px;
+    }
+}

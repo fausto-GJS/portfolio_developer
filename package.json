@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/fausto-GJS/portfolio_developer#readme",
   "dependencies": {
+    "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0"
   }
 }

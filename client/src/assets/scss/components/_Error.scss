@@ -1,0 +1,9 @@
+@use '../root/module.scss';
+@mixin Error {
+    #Error{
+
+        @include module.flex-row;
+        width: 100px;
+        background-color: aqua;
+    }
+}
