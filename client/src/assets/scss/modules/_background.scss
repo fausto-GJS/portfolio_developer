@@ -1,6 +1,6 @@
 @mixin glitter {
     background-image: url('../imgs/glitter.gif');
-    background-size: contain;
+    background-size: 100%;
 }
 @mixin prata {
     background-image: url('../imgs/prata.jpg');

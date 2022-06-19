@@ -1,0 +1,17 @@
+@mixin size1 {
+    width: 10px;
+    height: 10px;
+}
+@mixin size2 {
+    width: 25px;
+    height: 25px;
+}
+@mixin size3 {
+    width: 30px;
+    height: 30px;
+}
+
+@mixin size4 {
+    width: 100px;
+    height: 100px;
+}
