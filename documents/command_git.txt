@@ -1,0 +1,2 @@
+comentario : git commit -m "comentario"  
+subir para o git : git push -u origin
