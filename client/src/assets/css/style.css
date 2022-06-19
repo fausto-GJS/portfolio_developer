@@ -28,15 +28,31 @@ a {
 #AboutUs {
   display: flex;
   flex-direction: column;
-  background-color: #b5b5b5;
+  background-color: #525252;
   font-size: 30px;
+}
+#AboutUs .titleInfo {
+  font-weight: bold;
+  background-image: url("../imgs/marmore.jpg");
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-left: 100px;
+}
+#AboutUs .titleInfo::before {
+  content: "";
+  animation: info 10s infinite;
 }
 #AboutUs img {
   width: 250px;
   height: 250px;
   border-radius: 200px 100px;
 }
-#AboutUs .iconNode, #AboutUs .iconReact, #AboutUs .iconSass, #AboutUs .iconMongo {
+#AboutUs .iconNode,
+#AboutUs .iconReact,
+#AboutUs .iconSass,
+#AboutUs .iconMongo {
   width: 70px;
   height: 70px;
   margin: 10px;
@@ -44,7 +60,6 @@ a {
 #AboutUs .infoAbility {
   padding-left: 25px;
   padding-right: 5px;
-  border: 1px solid #000;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -57,13 +72,13 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 25px;
+  color: #ffcb1a;
 }
 #AboutUs .card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #000;
   width: 100%;
   height: 200px;
 }
@@ -74,46 +89,144 @@ a {
   align-items: center;
   background-image: url("../imgs/glitter.gif");
   background-size: 100%;
-  border: 1px solid #000;
+  margin-left: 50px;
   width: 50%;
   height: 220px;
   border-radius: 200px 100px;
 }
 #AboutUs .card-description {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   animation: molecule 15s infinite;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding: 30px;
-  padding-left: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   flex-wrap: wrap;
-  border: 1px solid #000;
-  background-color: aqua;
-  width: 600px;
-  font-size: 18px;
-  font-weight: bold;
+  background-image: radial-gradient(#888, #666, #444, #222, #000);
+  width: 700px;
+  color: #cdd20b;
 }
-
+#AboutUs .card-description p {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 30px;
+}
+#AboutUs .infoIcons {
+  font-size: 18px;
+}
+#AboutUs .infoIcons::before {
+  content: "";
+  animation: infoIcons 15s infinite;
+}
+#AboutUs .iconNode {
+  animation: Node 15s infinite;
+}
+#AboutUs .iconReact {
+  animation: React 15s infinite;
+}
+#AboutUs .iconSass {
+  animation: Sass 15s infinite;
+}
+#AboutUs .iconMongo {
+  animation: Mongo 15s infinite;
+}
 @keyframes molecule {
   0% {
     border-radius: 50px;
   }
   25% {
-    border-radius: 180px 50px;
+    border-radius: 100px 50px;
   }
   50% {
-    border-radius: 180px 180px;
+    border-radius: 100px 100px;
   }
   75% {
-    border-radius: 50px 180px;
+    border-radius: 50px 100px;
   }
   100% {
     border-radius: 50px;
   }
 }
+@keyframes Node {
+  0% {
+    color: #0ef202;
+  }
+  25% {
+    color: #ffcb1a;
+  }
+  75% {
+    color: #ffcb1a;
+  }
+  100% {
+    color: #ffcb1a;
+  }
+}
+@keyframes React {
+  0% {
+    color: #ffcb1a;
+  }
+  25% {
+    color: #01f3db;
+  }
+  75% {
+    color: #ffcb1a;
+  }
+  100% {
+    color: #ffcb1a;
+  }
+}
+@keyframes Sass {
+  0% {
+    color: #ffcb1a;
+  }
+  25% {
+    color: #ffcb1a;
+  }
+  75% {
+    color: #ee00f4;
+  }
+  100% {
+    color: #ffcb1a;
+  }
+}
+@keyframes Mongo {
+  0% {
+    color: #ffcb1a;
+  }
+  25% {
+    color: #ffcb1a;
+  }
+  75% {
+    color: #ffcb1a;
+  }
+  100% {
+    color: #0ef202;
+  }
+}
+@keyframes infoIcons {
+  0% {
+    content: "Backend - Node.js";
+    color: #0ef202;
+  }
+  25% {
+    content: "Frontend - React.js";
+    color: #01f3db;
+  }
+  75% {
+    content: "Desing - Sass";
+    color: #ee00f4;
+  }
+  100% {
+    content: "Banco de Dados - MongoDB";
+    color: #0ef202;
+  }
+}
+@keyframes info {
+  0% {
+    content: "Desenvolvedor Fullstack Junior";
+  }
+  100% {
+    content: "Developer Fullstack Junior";
+  }
+}
+
 #Contact {
   display: flex;
   flex-direction: row;

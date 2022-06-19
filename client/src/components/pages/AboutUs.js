@@ -5,7 +5,7 @@ export default function AboutUs() {
     return (
         <div id="AboutUs">
             <div className="infoAbility">
-                <h4>Developer Fullstack Junior</h4>
+                <p className='titleInfo'></p>
 
                 <div className="ability">
                     <p>Habilidades</p>
@@ -15,21 +15,25 @@ export default function AboutUs() {
                         <FaSass className='iconSass' />
                         <SiMongodb className='iconMongo' />
                     </div>
-                    <p className="infoIcons">node</p>
+                    <p className="infoIcons"></p>
                 </div>
 
             </div>
             <div className="card">
                 <div className="card-photo">
+                    
                     <img src={profile} alt="profile" />
                 </div>
                 <div className="card-description">
                     <p>
                         Desenvolvedor Web Fullstack, formado em Analise e desenvolvimento de sistemas, pela Universidade Nove de Julho desde 06/2022.
                         Conhecimento hibrido em diversas ferramentas, linguagens e frameworks. Assim como C#, Java, Python, Linguagem C.
-                        Desenvolvimento Web,Mobile e sistemas embarcados
+                        Desenvolvimento Web,Mobile e sistemas embarcados.
                     </p>
                 </div>
+            </div>
+            <div className="network">
+                
             </div>
 
         </div>

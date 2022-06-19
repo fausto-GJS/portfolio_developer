@@ -49,3 +49,18 @@
     width: 80px;
     height: 80px;
 }
+@mixin node {
+    color:#0ef202;
+}
+@mixin react{
+    color:#01f3db;
+}
+@mixin sass {
+    color:#ee00f4;
+}
+@mixin mongoDB {
+    color:#0ef202;
+}
+@mixin gold {
+    color:#ffcb1a;
+}

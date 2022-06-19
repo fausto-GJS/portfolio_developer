@@ -1,80 +1,246 @@
 @use '../root/module.scss';
+
 @mixin AboutUs {
-    #AboutUs{
+    #AboutUs {
         @include module.flex-column;
         @include module.background-fundo1;
         font-size: 30px;
-        img{
+
+        .titleInfo {
+            font-weight: bold;
+           &::before {
+                content: '';
+                animation: info 10s infinite;
+            }
+            @include module.background-marmore;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-left: 100px;
+
+        }
+
+        img {
             width: 250px;
             height: 250px;
             border-radius: 200px 100px;
         }
-        .iconNode,.iconReact,.iconSass,.iconMongo{
+
+        .iconNode,
+        .iconReact,
+        .iconSass,
+        .iconMongo {
             @include module.icon-size7;
             margin: 10px;
         }
-        .infoAbility{
+
+        .infoAbility {
             padding-left: 25px;
             padding-right: 5px;
-            border: 1px solid #000;
             width: 100%;
             @include module.flex-row;
             @include module.position-space;
         }
-        .ability{
+
+        .ability {
             @include module.flex-column;
             @include module.position-center;
             margin-top: 25px;
+
+            color: #ffcb1a;
         }
-        .card{
+
+        .card {
             @include module.flex-row;
             @include module.position-space;
-            border: 1px solid #000;
             width: 100%;
             height: 200px;
         }
-        .card-photo{
+
+        .card-photo {
             @include module.flex-row;
             @include module.position-center;
             @include module.background-glitter;
-            border: 1px solid #000;
+            margin-left: 50px;
             width: 50%;
             height: 220px;
-             border-radius: 200px 100px;
+            border-radius: 200px 100px;
         }
-        .card-description{
-            @include module.flex-row;
-            @include module.position-center;
+
+        .card-description {
             animation: molecule 15s infinite;
-            margin-left: 50px;
-            margin-right: 50px;
-            padding: 30px;
-            padding-left: 50px;
+            margin-left: 10px;
+            margin-right: 10px;
             flex-wrap: wrap;
-            border: 1px solid #000;
-            background-color: aqua;
-            width: 600px;
+            background-image: radial-gradient(#888, #666, #444, #222, #000);
+            width: 700px;
+            color: #cdd20b;
+
+            p {
+                font-size: 17px;
+                font-weight: bold;
+                padding: 30px;
+            }
+        }
+
+        .infoIcons {
             font-size: 18px;
-            font-weight: bold;
 
-        }
-    }
-    @keyframes molecule {
-        0%{
-            border-radius:50px;
-        }
-        25%{
-            border-radius:180px 50px;
-        }
-        50%{
-            border-radius:180px 180px;
-        }
-        75%{
-            border-radius:50px 180px;
-        }
-        100%{
-            border-radius:50px;
+            &::before {
+                content: '';
+                animation: infoIcons 15s infinite;
+            }
         }
 
+        .iconNode {
+            animation: Node 15s infinite;
+        }
+
+        .iconReact {
+            animation: React 15s infinite;
+        }
+
+        .iconSass {
+            animation: Sass 15s infinite;
+        }
+
+        .iconMongo {
+            animation: Mongo 15s infinite;
+        }
+
+        @keyframes molecule {
+            0% {
+                border-radius: 50px;
+            }
+
+            25% {
+                border-radius: 100px 50px;
+            }
+
+            50% {
+                border-radius: 100px 100px;
+            }
+
+            75% {
+                border-radius: 50px 100px;
+
+            }
+
+            100% {
+                border-radius: 50px;
+            }
+        }
+
+        @keyframes Node {
+            0% {
+                @include module.icon-node;
+            }
+
+            25% {
+                @include module.icon-gold;
+            }
+
+            75% {
+                @include module.icon-gold;
+            }
+
+            100% {
+                @include module.icon-gold;
+
+            }
+        }
+
+        @keyframes React {
+            0% {
+                @include module.icon-gold;
+            }
+
+            25% {
+                @include module.icon-react;
+            }
+
+            75% {
+                @include module.icon-gold;
+            }
+
+            100% {
+                @include module.icon-gold;
+
+            }
+        }
+
+        @keyframes Sass {
+            0% {
+                @include module.icon-gold;
+            }
+
+            25% {
+                @include module.icon-gold;
+            }
+
+            75% {
+                @include module.icon-sass;
+            }
+
+            100% {
+                @include module.icon-gold;
+
+            }
+        }
+
+        @keyframes Mongo {
+            0% {
+                @include module.icon-gold;
+            }
+
+            25% {
+                @include module.icon-gold;
+            }
+
+            75% {
+                @include module.icon-gold;
+            }
+
+            100% {
+                @include module.icon-mongoDB;
+
+            }
+        }
+
+        @keyframes infoIcons {
+            0% {
+                content: 'Backend - Node.js';
+
+                color: #0ef202;
+            }
+
+            25% {
+                content: 'Frontend - React.js';
+
+                color: #01f3db;
+            }
+
+            75% {
+                content: 'Desing - Sass';
+
+                color: #ee00f4;
+            }
+
+            100% {
+                content: 'Banco de Dados - MongoDB';
+                color: #0ef202;
+            }
+
+        }
+
+        @keyframes info {
+            0% {
+                content: 'Desenvolvedor Fullstack Junior';
+            }
+
+            100% {
+                content: 'Developer Fullstack Junior';
+            }
+        }
     }
 }
